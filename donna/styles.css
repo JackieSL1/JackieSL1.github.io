@@ -5,6 +5,9 @@
 
 body {
     background-color: rgb(177, 222, 240);
+    background: linear-gradient(45deg, red, blue);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     font-family: 'Lucida Sans';
 }
 
@@ -21,30 +24,37 @@ img {
     text-align: center;
     border: solid rgb(224, 70, 183) 10px;
     border-radius: 10px;
+    overflow: hidden;
 }
 
-button {
+.button {
     width: 100px;
     height: 100px;
     font-size: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: 0.1s;
+}
+
+.button:hover {
+    transform: scale(1.1);
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 520px 1fr ;
     grid-template-rows: 1fr 100px 1fr;
-    /* border: blue solid 1px; */
     column-gap: 15px;
 }
 
-.box {
-    /* background-color: beige;
-    border-radius: 5px;
-    border: solid red 2px; */
-}
-
-.button {
+.button-container {
     grid-row: 2 / 3;
+    background-size: 80px;
+    background-repeat: no-repeat;
 }
 
 .picture {

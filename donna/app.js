@@ -16,7 +16,7 @@ leftButton.addEventListener('click', changePicture)
 rightButton.addEventListener('click', changePicture)
 
 function changePicture() {
-    if (this.className == 'right') {
+    if (this.classList.contains('right')) {
         if (currentPicture + 1 < pictures.length) {
             currentPicture++
         }
@@ -24,7 +24,7 @@ function changePicture() {
             currentPicture = 0
         }
     }
-    else if (this.className == 'left') {
+    else if (this.classList.contains('left')) {
         if (currentPicture - 1 >= 0) {
             currentPicture--
         }
