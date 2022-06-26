@@ -41,7 +41,14 @@ img {
 }
 
 .button:hover {
+    transition: 10;
     transform: scale(1.1);
+}
+
+.button:active {
+    transition: 0.1s;
+    transform: scale(1);
+    background-color: rgb(255, 201, 242);
 }
 
 .grid {
@@ -67,4 +74,9 @@ img {
 
 .left {
     float: right;
+}
+
+.icon {
+    font-size: 80px;
+    background-color: transparent;
 }

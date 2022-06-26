@@ -2,13 +2,17 @@ const donnaPicture = document.getElementById('donna')
 const leftButton = document.querySelector('.left')
 const rightButton = document.querySelector('.right')
 const donnaDescription = document.querySelector('.description')
-const pictures = ['donna1.jpg', 'donna5.jpg', 'donna3.jpg', 'donna4.jpg']
+const pictures = ['images/donna1.jpg', 'images/donna5.jpg', 'images/donna3.jpg', 'images/donna4.jpg']
 const descriptions = [
     'Donna loves going on walks', 
     'Donna is a ferocious girl',
     'Donna loves to watch movies (her favourite movie is Joker (2019)',
     'Donna HATES wearing hats'
 ]
+
+const audio = document.querySelector('audio')
+audio.volume = 0.1
+audio.playbackRate = 2;
 
 let currentPicture = 0
 
