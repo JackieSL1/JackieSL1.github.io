@@ -10,10 +10,6 @@ const descriptions = [
     'Donna HATES wearing hats'
 ]
 
-const audio = document.querySelector('audio')
-audio.volume = 0.1
-audio.playbackRate = 2;
-
 let currentPicture = 0
 
 leftButton.addEventListener('click', changePicture)
