@@ -2,7 +2,7 @@ const donnaPicture = document.getElementById('donna')
 const leftButton = document.querySelector('.left')
 const rightButton = document.querySelector('.right')
 const donnaDescription = document.querySelector('.description')
-const pictures = ['donna1.jpg', 'donna2.jpg', 'donna3.jpg', 'donna4.jpg']
+const pictures = ['donna1.jpg', 'donna5.jpg', 'donna3.jpg', 'donna4.jpg']
 const descriptions = [
     'Donna loves going on walks', 
     'Donna is a ferocious girl',
